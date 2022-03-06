@@ -1,0 +1,1 @@
+select count(*) from catalog_table where extractvalue(xmldoc, '/book/genre/@type') = 'Nonfiction'; 

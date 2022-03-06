@@ -1,0 +1,1 @@
+select extractvalue(xmldoc, '/book/@id'), extractvalue(xmldoc, '/book/publish_date') from catalog_table where extractvalue(xmldoc, '/book/genre') = 'Computer' and extractvalue(xmldoc, '/book/price') >= 40; 
